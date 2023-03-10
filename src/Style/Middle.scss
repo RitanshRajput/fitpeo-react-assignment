@@ -1,0 +1,217 @@
+
+.middle{
+    position: absolute;
+    background-color: $white;
+    width: 64rem;
+    height: 19rem;
+    margin-top: -35.9rem ;
+    margin-left: 35px ;
+    border-radius: 10px;
+
+   /******** Overview , sort by***/
+
+    > .overview{
+        // background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+
+        > h3{
+            font-size: larger ;
+            font-weight: 400;
+            padding-left: 10px;
+        }
+
+        > div{
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+
+            > h4{
+                font-size: medium;
+                font-weight: 400;
+            }
+            >p{
+                font-size: medium;
+                padding-left: 1px;
+                font-weight: 300;
+                color: $grey;
+            }
+            > svg{
+                font-size: x-small;
+                color: $grey;
+            }
+        }
+    }
+
+    /****** left ******/
+    
+    > .left{
+        // background-color: yellow;
+        width: 35%;
+        
+        > p{
+            margin-top: 10px;
+            margin-left: 10px;
+            color: $grey;
+            font-weight: 400;
+        }
+
+        > h2{
+            // background-color: blue;
+            align-items: center;
+            padding: 2px 2px;
+            padding-left: 8px;
+            font-weight: 400;
+
+            > .green {
+                background-color: $lightGreen;
+                font-weight: 300;
+                font-size: small;
+                color: $darkGreen;
+                border-radius: 20px;
+                padding: 1px 5px ;
+            }
+        }
+        
+        > .orders{
+            // background-color: blue;
+            display: flex;
+            justify-content: center;
+
+            > span{
+                // background-color: green;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 16px 0px;
+                 
+                > p{
+                    font-weight: 300;
+                    color: $grey;
+                }
+                > h4{
+                    font-weight: 400;
+                }
+            }
+
+            > .spanOne{
+                border-right: 1px solid $lightGray;
+                border-bottom: 1px solid $lightGray;
+            }
+            > .spanTwo{
+                border-bottom: 1px solid $lightGray;
+            }
+            > .spanThree{
+                border-right: 1px solid $lightGray;
+                border-bottom: 1px solid $lightGray;
+            }
+            > .spanFour{
+                border-bottom: 1px solid $lightGray;
+            }
+            > .spanFive{
+                border-right: 1px solid $lightGray;
+            }
+
+
+        }
+
+    }
+
+    /********  Right graph *****/
+        > .right{
+            // background-color: blue;
+            position: relative;
+            height: 100%;
+            margin-top: -17.3rem;
+            margin-left: 22.4rem;
+            
+            > .price{
+                // background-color: red;
+                width: 2.5rem;
+                padding: 15px 5px;
+
+                > p{
+                    // background-color: yellowgreen;
+                    padding: 17px 1px;
+                    font-size: small;
+                    font-weight: 300;
+                    color: $grey;
+                }
+            }
+
+            > .bar{
+                // background-color: orange;
+                position: absolute;
+                width: 39.5rem;
+                height: 15rem;
+                margin-top: -17.5rem;
+                margin-left: 2.5rem;
+                display: flex;
+                justify-content: space-evenly;
+
+                > span{
+                    background: linear-gradient( to top, $white, $lightBlue);
+                    width: 1rem;
+                    height: 4rem;
+                    margin-top: 5px;
+                    border-radius: 10px 10px 10px 10px ;
+
+                }
+
+                > .bar1{
+                     margin-top: 8rem;
+                     margin-left: -1.5rem;
+                }
+                > .bar2{
+                    margin-top: 7.2rem;
+                }
+                > .bar3{
+                    margin-top: 8.4rem;
+                }
+                > .bar4{
+                    margin-top: 6.2rem;
+                }
+                > .bar5{
+                    margin-top: 6.9rem;
+                    margin-left: 2px;
+                }
+                > .bar6{
+                    margin-top: 5.8rem;
+                }
+                > .bar7 {
+                    margin-top: 6.9rem;
+                }
+                > .bar8{
+                   margin-top: 4.8rem;
+                   height: 5rem;
+                } 
+                > .bar9{
+                  margin-top: 5.7rem;
+                }
+
+            }
+
+            > .month{
+                // background-color: yellowgreen;
+                display: flex;
+                justify-content: space-around;
+                margin-left: 2.5rem;
+                margin-top: -2.5rem;
+                border-top: 1px solid $grey;
+
+                > p{
+                    // background-color: red;
+                    padding: 10px 10px;
+                    font-size: small;
+                    font-weight: 300;
+                    color: $grey;
+                    border-top: 2px solid $lightBlue;
+                }
+            }
+            
+        }
+}

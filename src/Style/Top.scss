@@ -1,0 +1,152 @@
+
+.top{
+    position: absolute;
+    // background-color: red;
+    width: 65rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: -41.3rem;
+    margin-left: 30px;
+
+    > .first{
+        background-color: $white;
+        width: 20.5rem;
+        display: flex;
+        padding: 16px ;
+        align-items: center;
+        box-shadow: $lightGray;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 5px;
+
+        > .icon{
+           background-color: $lightBlue;
+           color: $white;
+           padding: 5px;
+           border-radius: 10px;
+           margin-right: 15px;
+
+           > svg{
+            font-size: x-large;
+           }
+        }
+       
+       > .data{
+          margin-right: 10px;
+        >p{
+            font-size: small;
+            color: $black;
+        }
+        > h4{
+            font-weight: 400;
+        }
+       }
+
+       > .rate{
+        background-color: $lightGreen;
+        margin-top: 20px;
+        margin-left: 7rem;
+        font-weight: 300;
+        font-size: small;
+        color: $darkGreen;
+        border-radius: 20px;
+        padding: 1px 5px ;
+    }
+    }
+
+/*******second **/
+    > .second{
+        background-color: $white;
+        width: 20.5rem;
+        display: flex;
+        padding: 16px ;
+        align-items: center;
+        box-shadow: $lightGray;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+
+        > .icon{
+           background-color: $lightBlue;
+           color: $white;
+           padding: 5px;
+           border-radius: 10px;
+           margin-right: 15px;
+
+           > svg{
+            font-size: x-large;
+           }
+        }
+       
+       > .data{
+          margin-right: 10px;
+        >p{
+            font-size: small;
+            color: $black;
+        }
+        > h4{
+            font-weight: 400;
+        }
+       }
+
+       > .rate{
+        background-color: $lightRed;
+        margin-top: 20px;
+        margin-left: 8rem;
+        font-weight: 300;
+        font-size: small;
+        color: $darkRed;
+        border-radius: 20px;
+        padding: 1px 5px ;
+    }
+    }
+
+/***** third */
+    > .third{
+        background-color: $white;
+        width: 20.5rem;
+        display: flex;
+        padding: 16px ;
+        align-items: center;
+        box-shadow: $lightGray;
+        border-radius: 10px;
+        margin-left: 10px;
+
+
+        > .icon{
+           background-color: $lightBlue;
+           color: $white;
+           padding: 5px;
+           border-radius: 10px;
+           margin-right: 15px;
+
+           > svg{
+            font-size: x-large;
+           }
+        }
+       
+       > .data{
+          margin-right: 10px;
+        >p{
+            font-size: small;
+            color: $black;
+        }
+        > h4{
+            font-weight: 400;
+        }
+       }
+
+       > .rate{
+        background-color: $lightRed;
+        margin-top: 20px;
+        margin-left: 7rem;
+        font-weight: 300;
+        font-size: small;
+        color: $darkRed;
+        border-radius: 20px;
+        padding: 1px 5px ;
+    }
+    }
+}

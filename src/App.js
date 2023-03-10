@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{ useState} from 'react';
+import Header from './Component/Header' ;
+import SidePanel from './Component/SidePanel';
+import Profile from './Component/Profile' ;
+import Top from './Component/Top' ;
+import Middle from './Component/Middle' ;
+import Bottom from './Component/Bottom' ;
 
-function App() {
+const App = ()=>  {
+
+  const [menu, setMenu] = useState(false) ;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header menu={menu} setMenu={setMenu} />    
+    <SidePanel menu={menu} setMenu={setMenu} />
+    <Profile />
+    <Bottom />
+    <Middle />
+    <Top />
     </div>
   );
 }

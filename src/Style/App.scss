@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import "Static";
+@import "Header" ;
+@import "SidePanel" ;
+@import "Profile" ;
+@import "Top" ;
+@import "Middle" ;
+@import "Bottom" ;
+
+*{
+    margin:  0%;
+    padding: 0%;
+    font-family: $text1;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    background-color:  $lightGray;
+    overflow-x: hidden ;
+ }

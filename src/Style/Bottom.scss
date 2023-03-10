@@ -1,0 +1,398 @@
+
+.bottom{
+  // background-color: red;
+  position: absolute;
+  width: 64rem;
+  height: 16rem;
+  margin-top: -15.9rem;
+  margin-left: 35px;
+  border-radius: 10px;
+  display: flex;
+  
+  //********* First Box *******/
+  > .first{
+    background-color: $white;
+    width: 32%;
+    position: relative;
+    margin-right: 15px;
+    border-radius: 10px;
+
+    >span{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // background-color: red;
+      padding: 5px 5px;
+
+      > h4{
+        font-size: medium;
+        font-weight: 400;
+        margin-left: 5px;
+      }
+      > span{
+         display: flex;
+         align-items: center;
+         margin-right: 5px;
+
+         > p{
+          font-size: small;
+          color: $grey;
+         }
+         >svg{
+          font-size: x-small;
+          color: $grey;
+         }
+      }
+    }
+  
+    /****this month */
+   > .thisMonth{
+    // background-color: orange;
+    display: flex;
+    justify-content: space-between;
+
+     > .heading{
+      // background-color: purple;
+      
+      >p{
+        margin-top: 5px;
+        margin-left: 10px;
+        color: $grey;
+        font-size: small;
+        font-weight: 300;
+      }
+      >h3{
+        font-size: large;
+        margin-left: 10px;
+        font-weight: 400;
+      }
+     }
+
+     > .balls{
+      // background-color: purple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > .blueBall{
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        background-color: $lightBlue;
+        margin-top: 20px;
+        margin-right: 3px;
+      }
+      > p{
+        font-size: small;
+        font-weight: 300;
+        color: $grey;
+        margin-right: 5px;
+        margin-top: 20px;
+      }
+
+      > .redBall{
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        background-color: $darkRed;
+        margin-top: 20px;
+        margin-right: 3px;
+      }
+     }
+   }
+
+   /** vertical Numbers **/
+     > .number{
+          // background-color: orange;
+          display: flex;
+          flex-direction: column;
+          padding: 5px 0px;
+          padding-left: 3px;
+          height: 100%;
+          width: 2.5rem;
+
+           > p{
+            //  background-color: red;
+             padding: 4px 0px ;
+             padding-left: 5px;
+             color: $grey;
+           }
+      }
+   /*** Bars  **/
+      > .bar{
+        position: absolute;
+        background-color: white;
+        margin-top: -16rem;
+        margin-left: 2.5rem;
+        width: 16.8rem;
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+
+        > .barContainer{
+          // background-color: black;
+          width: 1.5rem;
+          height: 9rem;
+          margin-top: 1rem;
+          display: flex;
+          justify-content: space-between;
+          gap: 1px;
+
+          >.blueBar{
+            background: linear-gradient(to top ,$white, $lightBlue);
+            width: 50%;
+            height: 100%;
+            border-radius: 10px 10px 10px 10px;
+          }
+          >.redBar{
+            background: linear-gradient(to top, $white, $darkRed) ;
+            width: 50%;
+            height: 100%;
+            border-radius: 10px 10px 10px 10px;
+          }
+        }
+
+        > .weekOne{
+          margin-left: 12px;
+          > .blueBar{
+            margin-top: 6.5rem;
+          }
+          > .redBar{
+            margin-top: 4.6rem;
+          }
+        }
+
+        > .weekTwo{
+          > .blueBar{
+            margin-top: 3.8rem;
+          }
+          > .redBar{
+            margin-top: 6rem;
+          }
+        }
+        > .weekThree{
+          > .blueBar{
+            margin-top: 5rem;
+          }
+          > .redBar{
+            margin-top: 3.4rem;
+          }
+        }
+        > .weekFour{
+          > .blueBar{
+            margin-top: 1.6rem;
+          }
+          > .redBar{
+            margin-top: 5.8rem;
+          }
+        }
+        > .weekFive{
+          margin-right: 12px;
+          > .blueBar{
+            margin-top: 4.9rem;
+          }
+          > .redBar{
+            margin-top: 4rem;
+          }
+        }
+      }
+   
+
+
+    /*** Weeks */
+          > .week{
+            // background-color: red;
+            position: absolute;
+            margin-top: -6rem;
+            margin-left: 2.5rem;
+            display: flex;
+            width: 16.7rem;
+            border-top: 0.5 solid $lightGray;
+            > span{
+              display: flex;
+              // background-color: yellow;
+              padding: 0px 16.5px;
+
+              >p{
+                font-weight: 300;
+                color: $grey;
+              }
+            }
+          }
+  }
+
+
+  /*****  Second box ******/
+  > .second{
+    background-color: $white;
+    width: 32%;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-right: 10px;
+    margin-left: 6px;
+
+    > .heading{
+      // background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 5px;
+
+      > h3{
+        font-size: medium;
+        font-weight: 400;
+      }
+      > svg{
+        margin: 0px 5px;
+        font-size: larger;
+      }
+    }
+
+    
+    > .container{
+        text-align: center;
+        margin-top: 1rem;
+
+      > .ui-widgets {
+          display:inline-block;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 9rem;
+          border: 1.3rem solid $darkRed;
+          border-left-color: $lightGray;
+          // border-top-color:$lightBlue ;
+          border-right-color: $lightBlue;
+          border-bottom-color: $lightBlue ;
+      }
+  }
+
+  > .colors{
+    // background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-top: 1px solid $lightGray;
+    margin-top: 1rem;
+
+    >div{
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      >p{
+        font-size: medium;
+        font-weight: 300;
+        color: $grey;
+      }
+
+      > span{
+        // background-color: white;
+        width: 3rem;
+        height: 1rem;
+        margin: 5px 0px;
+        border-radius: 10px;
+      }
+
+      > .blueColor{
+        background-color: $lightBlue;
+      }
+      > .whiteColor{
+        background-color: $lightGray;
+      }
+      > .redColor{
+        background-color: $darkRed;
+      }
+    }
+  }
+}
+
+/**** Third Box**/
+
+> .third{
+  background-color: $white;
+  width: 32%;
+  border-radius: 10px;
+  margin-left: 10px;
+
+  > .heading{
+    // background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 5px;
+         
+    > h3{
+       font-size: medium;
+       font-weight: 400;
+    }
+
+    > span{
+        display: flex;
+        align-items: center;
+
+        >p{
+          font-size: small;
+          font-weight: 300;
+          color: $grey;
+        }
+        > svg{
+          font-size: x-small;
+          color: $grey;
+        }
+    }
+  }
+
+    > .content{
+    //  background-color: orange;
+     display: flex;
+     flex-direction: column;
+       
+        > .mainDiv{
+          // background-color: yellowgreen;
+          display: flex;
+          justify-content: space-between;
+          padding: 8.5px 2px;
+
+           > .left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            > .rank{
+              background-color: $lightBlue;
+              color: $white;
+              padding: 8px 8px;
+              margin-left: 10px;
+              margin-right: 10px;
+              border-radius: 15px;
+              box-shadow: $grey;
+            }
+
+            > div > .itemName{
+               font-size: medium;
+               font-weight: 300;
+               padding-bottom: 1px;
+            }
+
+            > div > .price{
+              font-size: medium;
+              font-weight: 500;
+            }
+ 
+           }
+           
+           > .sale{
+               background-color: $lightGray;
+               align-self: center;
+               padding: 2px 8px ;
+               margin-right: 10px;
+               border-radius: 50px;
+               font-size: small;
+               font-weight: 500;
+           }
+        }
+    }
+}
+
+}

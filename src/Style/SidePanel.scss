@@ -1,0 +1,300 @@
+
+.sidePanel {
+    width: 18rem;
+    height: 100vh;
+    background-color:  #000026;
+    color: $grey;
+    position: absolute;
+    top: 0%;
+    position: fixed;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    transform: translateX(-110%);
+    z-index: 999999999999;
+    
+ 
+> .name{
+    // background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-top: -10px;
+    
+    > h2{
+        color: $darkRed;
+        font-family: $text2;
+        font-weight: 700 ;
+        font-size:xx-large ;
+    }
+
+    > svg {
+      border: 1px solid $white;
+      border-radius: 5px;
+      font-size: x-large;
+      color: $white;
+      &:hover {
+        color: $darkRed;
+        border: none;
+      }
+    }
+  } 
+
+/*** Dashboard  */
+
+  > .dashboard{
+    // background-color: blue;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+
+    > .head{
+        // background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px;
+        
+        > span{
+        // background-color: red;
+        display: flex;
+        align-items: center;
+
+        > svg{
+            font-size: x-large;
+            color: $white;
+            margin-right: 3px;
+        }
+        > h4{
+            font-size:large;
+            font-weight: 400;
+            color: $white;
+        } 
+    }
+    
+        > .up {
+            // background-color: red;
+            font-size: x-small;
+            color: $white;
+        }
+
+  }
+    > .dashChild{
+        // background-color: green;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem ;
+        font-size: medium;
+        font-weight: 300;
+        > p{
+            padding: 2px 0px  ;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+  
+  }
+
+/*** Application  */
+
+  > .application {
+    // background-color: green;
+    padding: 5px ;
+
+    > h4{
+        font-size: large;
+        font-weight: 400;
+        color: $white;
+    }
+
+    > .common{
+        // background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        margin-top: 7px;
+        &:hover{
+            color: $white;
+        }
+
+      > .nameSymbol{
+           display: flex ;
+           flex-wrap: wrap;
+           align-items: center;
+           margin: 3px 0px ;
+        
+            > svg{
+                margin-right: 3px;
+                font-size: large;
+            }
+
+            > p{
+                font-weight: 300;
+            }
+        }
+        
+    }
+    >.chat
+    >.hot{
+        background-color: $transparent;
+        color: $darkRed;
+        font-size: small;
+        font-weight: 900;
+        padding: 2px 6px;
+        border-radius: 30px;
+    }
+
+    .down {
+        font-size: x-small;
+        color: $white;
+    }
+ 
+  }
+
+/***  Layout ***/
+
+  > .layout{
+    // background-color: green;
+    padding: 2px;
+    margin-top :5px;
+
+    > h4{
+    font-size: large;
+    font-weight: 400;
+    color: $white;
+    }  
+
+    > .laycomm{
+        // background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        margin-top: 7px;
+        &:hover{
+            color: $white;
+        }
+        > .sybName{
+            display: flex ;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 3px 0px ;
+             > svg{
+                 margin-right: 3px;
+                 font-size: large;
+             }
+
+             > p{
+                 font-weight: 300;
+             }
+         }
+
+        .down {
+            font-size: x-small;
+            color: $white;
+        }
+        
+        > .no{
+             background-color: rgb(104, 185, 247) ;
+             color: $white;
+             padding: 0px 7px;
+             border-radius: 18px ;
+            }
+     }  
+
+}
+
+  /*** Component **/
+
+  .components{
+    // background-color: green;
+    padding: 2px;
+    margin-top :5px;
+
+    > h4{
+        font-size: large;
+        font-weight: 400;
+        color: $white;
+        }
+
+    > .comp1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+          &:hover{
+            color: $white;
+          }
+        > .SN{
+            display: flex ;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 3px 0px ;
+             > svg{
+                 margin-right: 3px;
+                 font-size: large;
+             }
+
+             > p{
+                 font-weight: 300;
+             }
+         }
+
+         .down {
+            font-size: x-small;
+            color: $white;
+        }
+        
+
+    }
+  }
+
+
+    /** BUttton **/
+
+    .button{
+    //   background-color: green;
+      padding: 5px 8px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+
+      > button {
+        width: 7.3rem;
+        height: 2.2rem;
+        border-radius: 15px;
+        font-family: $text2;
+        font-weight: 300;
+        cursor: pointer;
+        background-color: $transparent;
+        color: $lightGray;
+      }
+
+      .login{
+        transition: all 0.3s;
+        &:hover{
+            color: $white;
+            font-weight: 300;
+            font-size: medium ;
+         }
+      }
+      .signup{
+        transition: all 0.3s;
+        &:hover{
+            color: $white;
+            font-weight: 300;
+            font-size: medium ;
+         }
+      }
+    }
+
+  }
+
+ .menuComes{
+     transform: translateX(0) ;
+ }
